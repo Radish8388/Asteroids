@@ -1,0 +1,21 @@
+﻿<Window x:Class="Asteroids.Options"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Asteroids"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        Title="Options"
+        Height="270" Width="300">
+    <Grid Background="AliceBlue">
+        <StackPanel Margin="20" Orientation="Vertical">
+            <CheckBox x:Name="SoundOn" Content="Sound Effect On" FontSize="24" Margin="0,0,0,20"/>
+            <CheckBox x:Name="SaucerAttack" Content="Saucer Attack" FontSize="24" Margin="0,0,0,20"/>
+            <CheckBox x:Name="InvincibleShip" Content="Invincible Ship" FontSize="24" Margin="0,0,0,30"/>
+            <Button Content="OK" IsDefault="True" Width="60" Click="OkButton_Click" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>

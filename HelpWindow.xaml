@@ -1,0 +1,55 @@
+﻿<Window x:Class="Asteroids.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Asteroids"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        Title="Help"
+        Height="400" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="5">
+                <TextBlock FontWeight="Bold" Margin="0,0,0,5"
+                    Text="About Asteroids"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="Asteroids is a multidirectional shooter video game developed and published in 1979 by Atari, Inc. for arcades. The player controls a spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and destroy the asteroids and saucers while avoiding colliding with either or being hit by the saucers' counterfire. The game becomes more difficult as the number of asteroids increases."/>
+
+                <TextBlock FontWeight="Bold" Margin="0,0,0,5"
+                    Text="Controls"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="Left Arrow : rotate the ship to the left"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="Right Arrow : rotate the ship to the right"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="Up Arrow : move forward"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="Down Arrow : jump to a random location"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="Space Bar : fire a bullet"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="P : pause the game"/>
+
+                <TextBlock FontWeight="Bold" Margin="0,0,0,5"
+                    Text=""/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text=""/>
+
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+        <Button Grid.Row="1" Content="OK" Width="60" 
+                Margin="0,10,0,0" HorizontalAlignment="Center"
+                IsDefault="True" Click="OkButton_Click"/>
+    </Grid>
+</Window>
