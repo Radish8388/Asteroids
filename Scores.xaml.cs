@@ -100,7 +100,7 @@ namespace Asteroids
                 if (scores[i].HighScore == -1)
                     tb.Text = "—";
                 else
-                    tb.Text = scores[i].DateOfScore.ToString();
+                    tb.Text = scores[i].DateOfScore.ToString("d");
                 tb.FontSize = 16;
                 tb.VerticalAlignment = VerticalAlignment.Center;
                 tb.HorizontalAlignment = HorizontalAlignment.Center;
