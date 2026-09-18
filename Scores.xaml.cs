@@ -27,7 +27,8 @@ namespace Asteroids
             List<Score>? scores = null;
 
             string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string asteroidsFolder = Path.Combine(appDataFolder, "Asteroids");
+            string asteroidsFolder = Path.Combine(appDataFolder, "Radish");
+            asteroidsFolder = Path.Combine(asteroidsFolder, "Asteroids");
             string filePath = Path.Combine(asteroidsFolder, "highscores.json");
 
             try

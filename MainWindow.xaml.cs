@@ -868,7 +868,8 @@ namespace Asteroids
 
             string json = JsonSerializer.Serialize(scores);
             string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string asteroidsFolder = Path.Combine(appDataFolder, "Asteroids");
+            string asteroidsFolder = Path.Combine(appDataFolder, "Radish");
+            asteroidsFolder = Path.Combine(asteroidsFolder, "Asteroids");
             string filePath = Path.Combine(asteroidsFolder, "highscores.json");
             Directory.CreateDirectory(asteroidsFolder); // ensure the folder exists first
             File.WriteAllText(filePath, json);
